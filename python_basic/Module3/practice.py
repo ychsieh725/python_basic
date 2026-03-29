@@ -6,7 +6,24 @@
 # 使用者猜對要回傳「恭喜中獎」
 
 
+answer = 87
 
+while True:
+    inputnum = int(input("請輸入數字1~100："))
+
+    if inputnum == answer:
+        print("恭喜中獎")
+        break
+
+    elif inputnum < 1 or inputnum > 100:
+        print("超出範圍請重新輸入")
+
+    elif inputnum < answer:
+        print("請輸入更大的數字")
+
+    elif inputnum > answer:
+        print("請輸入更小的數字")
+    
 
 
 
