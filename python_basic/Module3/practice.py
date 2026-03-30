@@ -9,7 +9,12 @@
 answer = 87
 
 while True:
-    inputnum = int(input("請輸入數字1~100："))
+    # 7-1 try應用
+    try:
+        inputnum = int(input("請輸入數字1~100："))
+    except Exception:
+        print("請輸入阿拉伯數字：")
+        continue #跳過下面程式 進到下一個迴圈
 
     if inputnum == answer:
         print("恭喜中獎")
